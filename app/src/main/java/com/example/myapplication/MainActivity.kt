@@ -26,10 +26,12 @@ class MainActivity : ComponentActivity() {
                 color = Color.Blue,
                 modifier = Modifier.fillMaxSize(),
             ) {
-                Box(
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Button(onClick = { service.show() }) {
+                Box(contentAlignment = Alignment.Center) {
+                    Button(
+                        onClick = {
+                            service.showModalScreen()
+                        }
+                    ) {
                         Text("Tap me")
                     }
                 }
